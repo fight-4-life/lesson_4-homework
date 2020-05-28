@@ -1,0 +1,30 @@
+body {
+  display: grid;
+  grid-template-areas: "header header header"   "l-sider main r-sider";
+  grid-template-columns: 15% 1fr 15%;
+  grid-template-rows: 15% 1fr;
+  grid-gap: 5px;
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+}
+.header {
+  grid-area: header;
+  background-color: #464658;
+  border: 3px solid #f00;
+}
+.main_content {
+  grid-area: main;
+  background-color: #45456b;
+  border: 3px solid #00f;
+}
+aside {
+  background-color: #06326d;
+  border: 3px solid #008000;
+}
+aside .left_sider {
+  grid-area: l-sider;
+}
+aside .right-sider {
+  grid-area: r-sider;
+}
